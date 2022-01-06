@@ -1,0 +1,76 @@
+.mainCards {
+    padding: 1rem;
+    @include fc;
+    font-family: $font;
+    @include desktop {
+        width: 80%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include fr;
+    }
+    @include tablet {
+        padding: 0 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+    .card {
+        transition: .2s ease;
+        @include desktop {
+            margin: 0 1rem;
+        }
+        @include card;
+        text-align: center;
+        @include fc;
+        @include cc;
+        .title, .footer {
+            width: $ff;
+            @include fr;
+            @include cc;
+            color: $Dark-Grayish-Blue;
+            font-weight: 600;
+            > * {
+                padding: 0 .3rem;
+            }
+        }
+        .footer {
+            color: $Lime-Green;
+        }
+        > p {
+            &:nth-of-type(1){
+                font-size: 3rem;
+                font-weight: 700;
+                margin: 1.5rem 0 .5rem 0;
+            }
+            &:nth-of-type(2){
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: $Dark-Grayish-Blue;
+                padding: .3rem 0 2rem 0;
+            }
+        }
+
+        &:nth-of-type(1){
+            @include border-top($Facebook);
+        }
+        &:nth-of-type(2){
+            @include border-top($Twitter);
+        }
+        &:nth-of-type(3){
+            border-top: .3rem solid;
+            border-image: $Instagram 1;
+        }
+        &:nth-of-type(4){
+            @include border-top($YouTube);
+            .footer {
+                color: $Bright-Red;
+            }
+
+        }
+    }
+
+}

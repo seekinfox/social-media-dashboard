@@ -1,0 +1,13 @@
+// darkmode for header
+.darkmode {
+    background-color:$Very-Dark-Blue;
+    color: $White;
+    .card {
+        background-color: $Dark-Desaturated-Blue;
+        transition: .2s ease;
+    }
+   
+}
+
+//darkmode for main cards 
+
