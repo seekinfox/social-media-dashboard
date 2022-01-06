@@ -1,3 +1,9 @@
+# Links 
+- Live page: [https://seekinfox.github.io/social-media-dashboard/](https://seekinfox.github.io/social-media-dashboard/).
+
+## Screenshots
+![https://github.com/seekinfox/social-media-dashboard/blob/main/src/images/Screenshot%202022-01-07%20at%2002-28-10%20React%20App.png?raw=true](https://github.com/seekinfox/social-media-dashboard/blob/main/src/images/Screenshot%202022-01-07%20at%2002-28-10%20React%20App.png?raw=true)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
